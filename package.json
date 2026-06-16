@@ -1,0 +1,21 @@
+{
+  "name": "Sesi 7",
+  "version": "1.0.0",
+  "description": "API Testing Automation sesi 7",
+  "type": "module",
+  
+  "scripts" : {
+    "test": "mocha tests --recursive --timeout 5000 --reporter spec --reporter mocha-simple-html-reporter --reporter-options output=hasil-tes.html"
+  },
+
+  "dependencies" : {
+    "node-fetch": "^3.3.1",
+    "ajv": "^8.12.0"
+  },
+
+  "devDependencies" : {
+    "mocha": "^10.2.0",
+    "chai": "^4.3.8",
+    "mocha-simple-html-reporter": "^2.0.0"
+  }
+}
