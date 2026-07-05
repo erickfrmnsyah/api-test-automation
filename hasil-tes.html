@@ -556,10 +556,10 @@ body {
                     <li class="passes">passes: <em>2</em></li>
                     <li class="pending">pending: <em>0</em></li>
                     <li class="failures">failures: <em>0</em></li>
-                    <li class="duration">duration: <em>1.7s</em></li>
+                    <li class="duration">duration: <em>628ms</em></li>
                 </ul>
             </div>
-            <ul id="report"><li class="suite"><h1>API Test Suite</h1><ul><li class="test pass slow"><h2>Validasi POST-Bank Account<span class="duration">1628ms</span></h2><pre><code>async function () {
+            <ul id="report"><li class="suite"><h1>API Test Suite</h1><ul><li class="test pass slow"><h2>Validasi POST-Bank Account<span class="duration">465ms</span></h2><pre><code>async function () {
         const  newPost = {
             &#x22;bank_account_number&#x22;: &#x22;12345670&#x22;,
             &#x22;bank_code&#x22;: &#x22;BCA&#x22;,
@@ -593,7 +593,7 @@ body {
         const compare = ajv.compile(schemaBankAcct)
         const hasil_validasi = compare(body)
         expect(hasil_validasi).to.be.true
-    }</code></pre></li><li class="test pass slow"><h2>Validasi GET-Bank Account<span class="duration">123ms</span></h2><pre><code>async function () {
+    }</code></pre></li><li class="test pass slow"><h2>Validasi GET-Bank Account<span class="duration">151ms</span></h2><pre><code>async function () {
         const response = await fetch(&#x60;${baseURL}/v1.1/identity/bank_account_data_requests/${id}&#x60;, {
             method: &#x22;GET&#x22;,
             headers:{
